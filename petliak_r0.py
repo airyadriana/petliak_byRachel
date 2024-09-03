@@ -8,6 +8,7 @@
 # Package imports
 ################################################
 import tensorflow as tf
+print(tf.__version__)
 import keras
 from tensorflow.keras import datasets, layers, models
 from keras import layers
@@ -30,7 +31,7 @@ from PIL import Image, ImageOps
 from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D
 from keras.layers import Activation, Dropout, Flatten, Dense
-from keras.utils import np_utils
+from keras.utils import to_categorical # used to be: from keras.utils import np_utils; to develop one hot encoding
 from tqdm import tqdm
 from alive_progress import alive_bar
 import time
